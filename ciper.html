@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .container{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background:#eefa0a ;
+    color: black;}  
+    #head{
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    }
+    #dd{
+        text-align: center;
+    }
+    .row-header{
+    margin:0px auto;
+    padding:0px auto;
+    margin-top: 10px;
+}
+#death{
+    justify-self: flex-end;
+    
+}
+#hh{
+    margin-left: 27%;
+}
+.ing{
+background-color: #edf553;
+min-height: 100px;
+
+}
+     </style>
+
+</head>
+<body>
+    <div class="container align-items-center">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12 ml-auto mr-auto" id="dd"><strong id="head">VasocS</strong></div>
+            </div>
+            <br>
+
+            <center><div class="btn-toolbar justify-content-between "id="hh" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-primary "onclick="showPicture() " >All</button>
+                    <button type="button" class="btn btn-primary"onclick="showSweet()">Sweets</button>
+                    <button type="button" class="btn btn-primary"onclick="showCake()">Cakes</button>
+                    <button type="button" class="btn btn-primary" onclick="showdonut()">Donuts</button>
+                    <button type="button" class="btn btn-primary" onclick="showIng()">Search</button>
+                </div>
+                <div></div>
+                <div class="input-group" id="death">
+                  <div class="input-group-prepend">
+                  <!-- Search form -->
+            <input class="form-control" type="text" id="myText" value="">
+                </div>
+              </div></center>
+            
+    </div>
+
+    <div class="container ing"><img style="display:inline;" id="bigpic" src="https://cdn.pixabay.com/photo/2018/09/09/21/58/dounat-3665638__340.jpg" class="float-right" /><img id="i2" src="https://media.istockphoto.com/photos/plate-with-slice-of-tasty-homemade-chocolate-cake-on-table-picture-id1145029556?b=1&k=6&m=1145029556&s=170667a&w=0&h=gqfHv8hnEUb5tQan1h2Sjpdh6xsdWjbrsNas5sevqTE=" class="float-left"><img id="i3" src="https://media.istockphoto.com/photos/diwali-sweets-picture-id494961954?b=1&k=6&m=494961954&s=170667a&w=0&h=75vxRdDHA-UGjvhQU_yZqawR1ZXygOAS0LExSiHihvs=" class="float-right">
+    </div>
+
+
+
+        <div class="container "><p>click on the links to order</p><br><p>key words applicable:</p><ul><li>sweet </li><li>cake</li><li>donut</li></ul></div>
+    <script>
+    function showPicture() {
+  var im1 = "https://cdn.pixabay.com/photo/2018/09/09/21/58/dounat-3665638__340.jpg";
+  var im2="https://media.istockphoto.com/photos/plate-with-slice-of-tasty-homemade-chocolate-cake-on-table-picture-id1145029556?b=1&k=6&m=1145029556&s=170667a&w=0&h=gqfHv8hnEUb5tQan1h2Sjpdh6xsdWjbrsNas5sevqTE="
+  var im3="https://media.istockphoto.com/photos/diwali-sweets-picture-id494961954?b=1&k=6&m=494961954&s=170667a&w=0&h=75vxRdDHA-UGjvhQU_yZqawR1ZXygOAS0LExSiHihvs="
+  var img1 = document.getElementById('bigpic')
+  var img2=document.getElementById('i2')
+  var img3=document.getElementById('i3')
+  img1.src = im1.replace('90x90', '225x225');
+  img2.src=im2.replace('90x90', '225x225');
+  img3.src=im3.replace('90x90', '225x225');
+  img1.style.display="inline"
+  img2.style.display = "inline";
+  img3.style.display = "inline";
+} 
+function showSweet() {
+    var im1 = "https://media.istockphoto.com/photos/jalebi-dessert-from-fordsburg-square-johannesburg-picture-id1158248570?b=1&k=6&m=1158248570&s=170667a&w=0&h=B3r2vVkkj5rKsKMDLWYGt5N5D2mMtbjKr7yVHF2_S08=";
+  var im2="https://media.istockphoto.com/photos/diwali-sweets-picture-id494961954?b=1&k=6&m=494961954&s=170667a&w=0&h=75vxRdDHA-UGjvhQU_yZqawR1ZXygOAS0LExSiHihvs="
+  var im3="https://cdn.pixabay.com/photo/2014/12/22/12/33/sweets-577230__340.jpg"
+  var img1 = document.getElementById('bigpic')
+  var img2=document.getElementById('i2')
+  var img3=document.getElementById('i3')
+  img1.src = im1.replace('90x90', '225x225');
+  img2.src=im2.replace('90x90', '225x225');
+  img3.src=im3.replace('90x90', '225x225');
+  img1.style.display="inline"
+  img2.style.display = "inline";
+  img3.style.display = "inline";
+} 
+
+function showCake() {
+    var im1 = "https://cdn.pixabay.com/photo/2015/12/08/00/42/cupcakes-1081963__340.jpg";
+  var im2="https://media.istockphoto.com/photos/plate-with-slice-of-tasty-homemade-chocolate-cake-on-table-picture-id1145029556?b=1&k=6&m=1145029556&s=170667a&w=0&h=gqfHv8hnEUb5tQan1h2Sjpdh6xsdWjbrsNas5sevqTE="
+  var im3="https://cdn.pixabay.com/photo/2016/11/22/18/52/cake-1850011__340.jpg"
+  var img1 = document.getElementById('bigpic')
+  var img2=document.getElementById('i2')
+  var img3=document.getElementById('i3')
+  img1.src = im1.replace('90x90', '225x225');
+  img2.src=im2.replace('90x90', '225x225');
+  img3.src=im3.replace('90x90', '225x225');
+  img1.style.display="inline"
+  img2.style.display = "inline";
+  img3.style.display = "inline";
+} 
+function showdonut() {
+    var im1 = "https://cdn.pixabay.com/photo/2018/09/09/21/58/dounat-3665638__340.jpg";
+  var im2="https://cdn.pixabay.com/photo/2018/01/14/14/49/donut-3081959__340.jpg"
+  var im3="https://cdn.pixabay.com/photo/2018/06/02/11/35/donut-3448210__340.jpg"
+  var img1 = document.getElementById('bigpic')
+  var img2=document.getElementById('i2')
+  var img3=document.getElementById('i3')
+  img1.src = im1.replace('90x90', '225x225');
+  img2.src=im2.replace('90x90', '225x225');
+  img3.src=im3.replace('90x90', '225x225');
+  img1.style.display="inline"
+  img2.style.display = "inline";
+  img3.style.display = "inline";
+
+} 
+
+function showIng() {
+  let x = document.getElementById("myText").value;
+  let res = x.toLowerCase();
+  if (res=="cake"){
+    showCake();
+  }
+  else if(res=="donut"){
+      showdonut();
+  }
+  else if(res=="sweet"){
+      showSweet();
+  }
+}
+  </script>
+</body>
+</html>
